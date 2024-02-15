@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhas Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+              
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#portfolio">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul> 
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+            
+                <h1>Hi, I'm <span>Suhas NU</span></h1>
+                  <br>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+        
+    </div>
+<!---------------------about----------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                     <img src="images/suhass1311.jpg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I'm a focused and organized individual looking for opportunities to grow
+                        myself while contributing towards the success of my team which can in turn
+                        help the organization achieve its mission. An effective communicator with good
+                        relationship building and interpersonal skills with a capability to lead a team 
+                        and keep them motivated. Quick learner and highly energetic person having a keen 
+                        attitude for learning and productively applying new knowledge.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('personal_details')">Personal Details</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML,CSS</span><br>Intermediate Level</li>
+                            <li><span>JavaScript</span><br>Beginner Level</li>
+                            <li><span>Python</span><br>Beginner Level</li>
+                            <li><span>Java</span><br>Beginner Level</li>
+                            <li><span>C,C++</span><br>Intermediate Level</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>Google Cloud Career Readiness certificate</span><br>GOOGLE</li>
+                            <li><span>HTML,CSS, and JavaScript for Web Developers</span><br>COURSERA</li>
+                            <li><span>Crash Course on Python</span><br>COURSERA</li>
+                            <li><span>Microsoft Azure Fundamentals</span><br>MICROSOFT</li>
+                            <li><span>Web Designe For Beginners:Real World Coding in HTML & CSS</span><br>UDEMY</li>
+                            <li><span>Python For Data Science</span><br>INFOSYS SPRINGBOARD</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>Information Science and Engineering at 
+                                Acharya Institute of Technology</li>
+                            <li><span>2018 - 2020</span><br>Class XII at
+                                Mahesh PU College</li>
+                            <li><span>2006- 2018</span><br>Class X at
+                                Shubhodaya English School</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="personal_details">
+                        <ul>
+                            <li><span>Father Name</span><br> Umesh N C
+                                </li>
+                            <li><span>Mother Name</span><br>Geetha K H
+                                </li>
+                            <li><span>Date-of-birth</span><br>13-November-2002
+                               </li>
+                            <li><span>Address</span><br>Bangalore
+                                </li>
+                            <li><span>Nationality</span><br>Indian
+                                </li>
+                            <li><span>Blood-group</span><br>B Positive(B+ve)
+                                </li>
+                            
+                        </ul>
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------projects---------------------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Online Job Portal System </h2>
+                    <p>------------DBMS Mini Project------------</p>
+                    <br>
+                    <p>Developed a Online Job Portal Management System mini project utilizing HTML, 
+                        CSS, and JavaScript as a Front-End, and MySQL and PHP as a Back-EndOnline Job Portal System is aimed at developing an online search Portal for the  
+                        Placement Details  for jobseekers.
+                        </p>
+
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-couch"></i>  
+                    <h2>My Furniture App</h2>
+                    <p>------------MAD Mini Project------------</p>
+                    <br>
+                    <p>The Furniture App is a mobile application designed to enhance the furniture
+                        shopping experience for users. Developed as part of the Mobile Application
+                        Development (MAD) Lab project, the app aims to provide a convenient
+                        platform for users to browse, select, and purchase furniture items, as well as
+                        visualize how they would look in their own space.</p>
+                </div>
+
+                <div>
+                    
+                    <i class="fa-solid fa-book-open"></i> 
+                    <h2>Dictionary Management System </h2>
+                    <p>------------FS Mini Project------------</p>
+                    <br>
+                    <p> The Dictionary Management System (DMS) is an essential tool for efficiently storing, retrieving, and 
+                        managing large collections of words and their corresponding definitions. This abstract presents a 
+                        DMS implementation that utilizes a file structure to optimize storage and retrieval operations.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-------------------protfolio----------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="certificate-list">
+                <div class="certificate">
+                    <img src="images/google.png">
+                </div>
+                <div class="certificate">
+                    <img src="images/python.png">
+                </div>
+                <div class="certificate">
+                    <img src="images/html.png">
+                </div>
+                <div class="certificate">
+                    <img src="images/microsoft.png">
+                </div>
+                <div class="certificate">
+                    <img src="images/web.png">
+                </div>
+                <div class="certificate">
+                    <img src="images/Android.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------contact----------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>
+                   <p><i class="fa-solid fa-envelope"></i><a href="mailto:">suhas3908@gmail.com</a></p>
+                   <p><i class="fa-solid fa-phone"></i><a href="tel:">7760448719</a></p>
+                   <div class="social-icon">
+                      <a href="https://instagram.com/suhas_nu_?igshid=ZDc4ODBmNjlmNQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/suhas-nu-34840a217"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://github.com/suhasnu"><i class="fa-brands fa-github"></i></a>
+                   </div>
+
+                   <a href="images/SUHAS_NU_RESUME_.pdf" download class="button button2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabconten of tabcontents){
+                tabconten.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
